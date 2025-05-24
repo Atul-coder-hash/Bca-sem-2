@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title>Table</title>
+    </head>
+
+<body>
+    <table border = "2" height = "50%" width = "50%">
+        <tr> 
+            <th>Roll no</td>    
+            <th>Class </td>
+            <th>Marks</td>
+      
+        </tr>
+
+        <tr> 
+            <td>1</td>    
+            <td>A </td>
+            <td>50</td>
+      
+        </tr>
+
+        <tr> 
+            <td>2</td>    
+            <td>B </td>
+            <td>60</td>
+      
+        </tr>
+    </table>
+</body>
+</html>
