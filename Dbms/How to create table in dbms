@@ -30,6 +30,88 @@ False      False      False
 
 
 
+						                                              	# update command
+
+
+
+SQL> create table nandstatements(serial number(5),P varchar(10), Q varchar(10),result varchar(10));
+
+Table created.
+
+SQL> insert into nandstatements values(1,'False','True','False');
+
+1 row created.
+
+SQL> insert into nandstatements values(2,'False','True','False');
+
+1 row created.
+
+SQL> insert into nandstatements values(3,'False','True','False');
+
+1 row created.
+
+SQL> insert into nandstatements values(4,'False','True','False');
+
+1 row created.
+
+SQL> select * from nandstatements;
+
+    SERIAL P          Q          RESULT
+---------- ---------- ---------- ----------
+         1 False      True       False
+         2 False      True       False
+         3 False      True       False
+         4 False      True       False
+
+SQL> update nandstatements set p = 'True' where serial=1;
+
+1 row updated.
+
+SQL> update nandstatements set q='False' where serial=2;
+
+1 row updated.
+
+SQL> select * from nandstatements;
+
+    SERIAL P          Q          RESULT
+---------- ---------- ---------- ----------
+         1 True       True       False
+         2 False      False      False
+         3 False      True       False
+         4 False      True       False
+
+SQL> update nandstatements set p='True' where serial = 2;
+
+1 row updated.
+
+SQL> update nandstatements set q='false' where serial = 4;
+
+1 row updated.
+
+SQL> select * from nandstatements;
+
+    SERIAL P          Q          RESULT
+---------- ---------- ---------- ----------
+         1 True       True       False
+         2 True       False      False
+         3 False      True       False
+         4 False      false      False
+
+SQL> update nandstatements set result='True' where serial=1;
+
+1 row updated.
+
+SQL> select * from nandstatements;
+
+    SERIAL P          Q          RESULT
+---------- ---------- ---------- ----------
+         1 True       True       True
+         2 True       False      False
+         3 False      True       False
+         4 False      false      False
+
+SQL>
+
 
 
 
