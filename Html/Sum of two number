@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>Sum</title>
+</head>
+<body>
+    <form>
+        <label> 
+            Value1:<input type = "number" id ="num1"placeholder="Enter value of value1"><br>
+            Value2:<input type = "number" id = "num2" placeholder="Enter value of value2"><br>
+        </label>
+        <button type="button" onclick="Sum()">Sum</button><br>
+       <!-- Sum=<input type = "number" id ="result"><br> -->
+        <p>Result: <span id="result"></span></p>
+       
+    </form>
+
+    <script>
+        function Sum()
+         {
+              a = parseInt(document.getElementById("num1").value);
+              b = parseInt( document.getElementById("num2").value);
+              c = a+b;
+             document.write(c);       
+         }
+       
+    </script>
+</body>
+
+</html>
