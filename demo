@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nicol Rider Webpage</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 50px;
+        }
+        
+        body{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            justify-content: space-around;
+        }
+
+        /* @media (max-width: 768px) 
+        {
+            .container {
+                        flex-direction: column;
+                            align-items: flex-start;
+                        }
+
+  
+        } */
+
+
+        .main{
+            margin: 40vh 50vh 40vh 50vh;
+            
+        border: 2px solid black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        justify-content: space-around;
+        padding: 50px;
+        } 
+
+        .heading{
+            font-size:200px ;
+        }
+
+/*         
+        #button1{
+            border: 1px solid black;
+            width: 100rem;
+            height: 10rem;
+            background-color: yellow; */
+        
+        .right{
+          display: flex;
+          flex-direction: column;
+        }
+       
+        .button{
+          padding: 70px;
+          border: 2px solid black;
+          border-radius: 100%;
+          height: 8rem;
+          width: 8rem;
+        }
+
+       
+    </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    
+  
+    <!-- <div class="header">
+        <a href="# " id="h1">Jeff Bezoz</a>
+        <a href="#" id="h2">Resume|</a>
+        <a href="# ">projects|</a>
+        <a href="# ">Contact</a>
+    </div> -->
+    
+    <div class="main">
+<a  href="resume.html" class="button" id = "button1"> Resume</a>
+        <div class="left">
+            <img src="https://bolt-gcdn.sc-cdn.net/3/p6tZC57hxvOkFKk2ckflm?bo=EhgaABoAMgF9OgEEQgYI_6m_kgZIAlASYAE%3D&uc=18" alt=" photo of jeff bejoj" style="padding: 10rem;transform: scale(3.5);">
+            
+        </div>
+        
+        <div class="right">
+            
+            <h1 class="heading">Hello</h1>
+            <p>Jeff Bezos</p><br>
+            <p>Jeff Bezos, Amazon founder, revolutionized e-commerce,<br> expanded into space with Blue Origin, and became one<br> of the world’s richest people.</p>
+
+            <div>
+
+              <a  href="resume.html" class="button" id = "button1"> Resume</a>
+              <button class="button" id = "button2"> Projects</button>
+              <button class="button" id = "button3"> Contact</button>
+            </div>
+        </div>
+        
+    </div>
+
+    </div>
+        
+</body>
+<!-- <script>
+  document.getElementById("button1").onclick = function() {
+    window.location.href = "resume.html";
+  console.log("hello");
+  };
+</script> -->
+
+</html>
