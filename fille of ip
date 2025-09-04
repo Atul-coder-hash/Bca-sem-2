@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>College Admission Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f9;
+      margin: 0;
+      padding: 20px;
+    }
+
+    .form-container {
+      max-width: 900px;
+      margin: auto;
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    form label {
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="number"],
+    input[type="date"],
+    select {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      margin-bottom: 15px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+
+    fieldset {
+      border: 1px solid #ccc;
+      padding: 15px;
+      margin-bottom: 20px;
+      border-radius: 5px;
+    }
+
+    legend {
+      font-weight: bold;
+      padding: 0 10px;
+    }
+
+    button[type="submit"] {
+      padding: 10px 20px;
+      background: #1976d2;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button[type="submit"]:hover {
+      background: #0d47a1;
+    }
+  </style>
+</head>
+<body>
+  <div class="form-container">
+    <h1>Seth G.L. Bihani S.D. (P.G.) College - Admission Form</h1>
+    <form id="admissionForm">
+
+      <fieldset>
+        <legend>Student Information</legend>
+        <label>Full Name: <input type="text" name="studentName" required /></label>
+        <label>Date of Birth: <input type="date" name="dob" required /></label>
+        <label>Gender:
+          <select name="gender" required>
+            <option value="">--Select--</option>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+            <option value="Other">Other</option>
+          </select>
+        </label>
+        <label>Nationality: <input type="text" name="nationality" /></label>
+        <label>Religion: <input type="text" name="religion" /></label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Parent/Guardian Details</legend>
+        <label>Father/Husband's Name: <input type="text" name="fatherName" /></label>
+        <label>Occupation (Father): <input type="text" name="fatherOccupation" /></label>
+        <label>Mother's Name: <input type="text" name="motherName" /></label>
+        <label>Occupation (Mother): <input type="text" name="motherOccupation" /></label>
+        <label>Total Annual Income: <input type="number" name="annualIncome" /></label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Contact Details</legend>
+        <label>Address: <input type="text" name="address" /></label>
+        <label>Pin Code: <input type="text" name="pinCode" /></label>
+        <label>Email ID: <input type="email" name="email" /></label>
+        <label>Mobile No. (Self): <input type="text" name="mobileSelf" /></label>
+        <label>Mobile No. (Father): <input type="text" name="mobileFather" /></label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Category & Other Info</legend>
+        <label>Category:
+          <select name="category">
+            <option value="">--Select--</option>
+            <option value="GEN">GEN</option>
+            <option value="SC">SC</option>
+            <option value="ST">ST</option>
+            <option value="OBC">OBC</option>
+            <option value="EWS">EWS</option>
+            <option value="Minority">Minority</option>
+            <option value="Handicapped">Handicapped</option>
+            <option value="Ex-serviceman">Ex-serviceman</option>
+          </select>
+        </label>
+        <label>Voter ID Available?
+          <input type="radio" name="voterId" value="Yes" /> Yes
+          <input type="radio" name="voterId" value="No" /> No
+        </label>
+        <label>If in Service, NOC Attached?
+          <input type="checkbox" name="nocAttached" />
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Academic Details</legend>
+        <label>Last Exam Name: <input type="text" name="lastExam" /></label>
+        <label>Passing Year: <input type="text" name="passingYear" /></label>
+        <label>Faculty: <input type="text" name="faculty" /></label>
+        <label>Obtained Marks: <input type="number" name="obtainedMarks" /></label>
+        <label>Maximum Marks: <input type="number" name="maxMarks" /></label>
+        <label>Percentage: <input type="text" name="percentage" readonly /></label>
+        <label>Institution Name: <input type="text" name="institution" /></label>
+        <label>Board/University: <input type="text" name="university" /></label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Subjects</legend>
+        <h4>Optional Subjects</h4>
+        <label><input type="checkbox" name="subjects" value="C++ Programming" /> C++ Programming</label>
+        <label><input type="checkbox" name="subjects" value="Computer Fundamentals" /> Computer Fundamentals</label>
+        <label><input type="checkbox" name="subjects" value="Computer Organization" /> Computer Organization</label>
+        <label><input type="checkbox" name="subjects" value="Java" /> Java</label>
+        <label><input type="checkbox" name="subjects" value="Python" /> Python</label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Documents Attached</legend>
+        <label><input type="checkbox" name="docs" value="Original TC" /> Original T.C.</label>
+        <label><input type="checkbox" name="docs" value="Original CC" /> Original C.C.</label>
+        <label><input type="checkbox" name="docs" value="Marksheet" /> Mark Sheet</label>
+        <label><input type="checkbox" name="docs" value="Migration" /> Migration Certificate</label>
+        <label><input type="checkbox" name="docs" value="Category Certificate" /> Category Certificate</label>
+        <label><input type="checkbox" name="docs" value="Residential Proof" /> Residential Proof</label>
+        <label><input type="checkbox" name="docs" value="Others" /> Others</label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Declaration</legend>
+        <p>I hereby affirm that the information is true and I will follow college rules. If found guilty, my admission may be rejected.</p>
+        <label>Signature of Applicant: <input type="text" name="applicantSign" required /></label>
+        <label>Signature of Parent/Guardian: <input type="text" name="parentSign" required /></label>
+      </fieldset>
+
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+
+  <script>
+    document.getElementById("admissionForm").addEventListener("submit", function (e) {
+      e.preventDefault();
+
+      const form = e.target;
+      const obtained = parseFloat(form.obtainedMarks.value);
+      const max = parseFloat(form.maxMarks.value);
+
+      if (!isNaN(obtained) && !isNaN(max) && max > 0) {
+        const percentage = ((obtained / max) * 100).toFixed(2);
+        form.percentage.value = percentage + "%";
+        alert("Form submitted successfully with percentage: " + percentage + "%");
+      } else {
+        alert("Please enter valid marks to calculate percentage.");
+      }
+    });
+  </script>
+</body>
+</html>
